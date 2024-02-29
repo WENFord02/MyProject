@@ -24,8 +24,8 @@
             </thead>
             <tbody>
                 <tr>
-                    {% if records %}
-                        {% for record in records %}
+                    {% if record %}
+                        {% for record in record %}
                             <td><a href="{% url 'record' record.id %}">{{ record.id }}</td>
                             <td>{{ record.created_at }}</td>
                             <td>{{ record.first_name }}</td>
